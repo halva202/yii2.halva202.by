@@ -41,6 +41,9 @@ AppAsset::register($this);
 				['label' => 'gmail', 'url' => ['/test/emailgmail']],
 				['label' => 'yandex (require settings)', 'url' => ['/test/emailyandex']],
 			]],
+			['label' => 'editor', 'url' => 'https://jobs.tut.by', 'items' => [
+				['label' => 'ckeditor', 'url' => ['/test/ckeditor']],
+			]],
         ]],
         ['label' => 'About', 'url' => ['/site/about']],
         ['label' => 'Contact', 'url' => ['/site/contact']],

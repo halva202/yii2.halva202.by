@@ -9,6 +9,7 @@ use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 
 use common\models\swiftmailer;
+use app\models\Test;
 
 class TestController extends Controller
 {
@@ -44,5 +45,11 @@ class TestController extends Controller
 		$modelMail->letter($data);
 			
         return $this->render('email-yandex');
+    }
+	
+	public function actionCkeditor()
+    {
+		$model = new Test;
+		return $this->render('ckeditor', ['model' => $model,]);
     }
 }
